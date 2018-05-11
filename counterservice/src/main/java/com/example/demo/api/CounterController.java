@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 
-@RestController
 @RefreshScope
+@RestController
 public class CounterController {
 
     private static AtomicLong count = new AtomicLong(0);
